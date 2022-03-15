@@ -2,16 +2,19 @@
   <div class="hello">
     <h1>{{ 'Hello from Micro Frontend One (Vue 3)' }}</h1>
     <ChildComponent />
+    <CalendarComponent />
   </div>
 </template>
 
 <script>
 import { ref } from "vue";
 import ChildComponent from './ChildComponent.vue'
+import CalendarComponent from './CalendarComponent.vue'
 
 export default {
   components: {
-    ChildComponent
+    ChildComponent,
+    CalendarComponent
   },
   props: {
   },
