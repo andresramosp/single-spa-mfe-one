@@ -1,16 +1,11 @@
 import "./set-public-path";
 import { h, createApp } from 'vue';
-// import ElementPlus from 'element-plus'
-import PrimeVue from 'primevue/config';
+import ElementPlus from 'element-plus'
 import singleSpaVue from 'single-spa-vue';
 
 import App from './App.vue';
 
 import 'element-plus/dist/index.css'
-
-import 'primevue/resources/themes/saga-blue/theme.css';
-import 'primevue/resources/primevue.min.css';
-import 'primeicons/primeicons.css';
 
 const vueLifecycles = singleSpaVue({
   createApp,
@@ -29,7 +24,7 @@ const vueLifecycles = singleSpaVue({
     },
   },
   handleInstance: (app) => {
-    app.use(PrimeVue);
+    app.use(ElementPlus)
   }
 });
 
