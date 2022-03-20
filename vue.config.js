@@ -13,7 +13,8 @@ module.exports = defineConfig({
     externals: [
       'element-plus',
       'vue',
-      'moment'
+      'moment',
+      'org/auth'
     ],
     // plugins: [
     //   AutoImport({

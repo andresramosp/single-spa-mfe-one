@@ -1,13 +1,12 @@
 <template>
   <div class="hello">
-    <h1>{{ 'Micro Frontend One (Vue 3 + ElementPlus)' }}</h1>
     <ChildComponent />
   </div>
 </template>
 
 <script>
 import { ref } from "vue";
-import ChildComponent from './ChildComponent.vue'
+import ChildComponent from '../components/ChildComponent.vue'
 
 export default {
   components: {
