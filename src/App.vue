@@ -11,7 +11,7 @@
     <br />
     <router-link to="/route2">Go to About</router-link>
     <br />
-    <div style="margin-top: 20px">
+    <div v-if="logged" style="margin-top: 20px">
       <router-view></router-view>
     </div>
   </div>
@@ -44,7 +44,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
