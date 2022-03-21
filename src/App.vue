@@ -7,9 +7,9 @@
       <div class="not-logged" v-else>Not Logged</div>
     </div>
     <h1>{{ "Micro Frontend One (Vue 3 + ElementPlus)" }}</h1>
-    <router-link to="/route1">Go to Home</router-link>
+    <router-link to="/route1">Route 1</router-link>
     <br />
-    <router-link to="/route2">Go to About</router-link>
+    <router-link to="/route2">Route 2</router-link>
     <br />
     <div v-if="logged" style="margin-top: 20px">
       <router-view></router-view>
